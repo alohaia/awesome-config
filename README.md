@@ -10,23 +10,15 @@
 - Emacs 表格格式无法对齐请设置等高等宽字体，例如 Iosevka，配置例子:
   ```emacs-lisp
   (if (fontp (font-spec
-				   ;; :name "Fira Code Nerd Font" 
-				   ;; :style "Retina"
 				   :name "Iosevka"
 				   :style "Regular"
-				   ;; :name "Sarasa Mono SC"
-				   ;; :style "Regular"
 				   )) 
 		   (set-face-attribute 'default nil 
 							   :font (font-spec 
-									  ;; :name "Fira Code Nerd Font"
-									  ;; :style "Retina"
 									  :name "Iosevka"
 									  :style "Regular"
-									  ;; :name "Sarasa Mono SC"
-									  ;; :style "Regular"
 									  :size 20)) 
-		 (message "无法找到Sarasa Mono SC字体，你可以更换其他字体或安装它让这条消息消失.")
+		 (message "无法找到Iosevka Regular字体，你可以更换其他字体或安装它让这条消息消失.")
   ```
 - Vim 用户请使用以下命令 (COMMAND) 以提升编辑时的体验 (如在编辑时临时开关请自行加上冒号) 最好在编辑完成后使用 [vim-table-mode](https://github.com/dhruvasagar/vim-table-mode) 进行表格体的优化
 ```vim
